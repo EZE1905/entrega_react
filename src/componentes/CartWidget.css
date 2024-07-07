@@ -1,0 +1,18 @@
+/* src/components/CartWidget.css */
+.cart-widget {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.cart-count {
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 0.75rem;
+}
