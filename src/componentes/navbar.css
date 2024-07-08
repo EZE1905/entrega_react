@@ -28,11 +28,24 @@
 .navbar-item a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: all 0.2s;
+    padding: 0.3rem 1rem;
+    transition: border-top 0.3s, color 0.3s, font-size 0.3s;
+    font-size: 18px;
 }
 
 .navbar-item a:hover {
     border-top: #009e18 3px solid;
     color: #009e18;
+    font-size: 22px;
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: #009e18 0px 0px 6px;
+}
+
+span {
+    margin-left: 0.5rem;
 }
