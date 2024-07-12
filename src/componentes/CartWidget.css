@@ -5,6 +5,12 @@
     align-items: center;
     color: white;
     cursor: pointer;
+    margin-left: 1rem;
+    transition: color 0.2s;
+}
+
+.cart-widget:hover {
+    color: #009e18;
 }
 
 .cart-count {

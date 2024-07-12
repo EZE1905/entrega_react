@@ -2,3 +2,22 @@
     width: 100vw;
     height: 100vh;
 }
+
+.contenedor-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-accion {
+    margin: 2rem 0 0.5rem 2rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.btn-accion:hover {
+    color: #009e18;
+    cursor: pointer;
+    border: 1px solid #009e18;
+    transform: scale(1.1);
+}
