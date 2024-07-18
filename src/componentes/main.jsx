@@ -1,60 +1,85 @@
 import React from "react";
 import "./main.css";
-import { useState } from "react";
+import celularesData from "../data/celulares.json";
+import notebookData from "../data/notebook.json";
+import auricularesData from "../data/auriculares.json";
 
-export default function Main() {
-    return (
-        <>
-            <div className="main">
-                <div className="card">
-                    <img
-                        className="card-img"
-                        src="https://m.media-amazon.com/images/I/51cPOOgzp0L.jpg"
-                        alt="iPhone"
-                    />
-                    <div className="card-title">iPhone 11</div>
-                    <div className="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                    <button className="btn">Comprar</button>
+export default function Main({ contenido }) {
+    let content;
+
+    switch (contenido) {
+        case "home":
+            content = (
+                <div className="main">
+                    {celularesData.map((celular, index) => (
+                        <div className="card" key={index}>
+                            <img
+                                className="card-img"
+                                src={celular.img}
+                                alt={celular.title}
+                            />
+                            <div className="card-title">{celular.title}</div>
+                            <div className="card-text">
+                                {celular.description}
+                            </div>
+                            <button className="btn">Comprar</button>
+                        </div>
+                    ))}
                 </div>
-                <div className="card">
-                    <img
-                        className="card-img"
-                        src="https://m.media-amazon.com/images/I/61i8Vjb17SL.jpg"
-                        alt="iPhone"
-                    />
-                    <div className="card-title">iPhone 13 Pro Max</div>
-                    <div className="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                    <button className="btn">Comprar</button>
+            );
+            break;
+
+        case "about":
+            content = (
+                <div className="main">
+                    {notebookData.map((notebook, index) => (
+                        <div className="card" key={index}>
+                            <img
+                                className="card-img"
+                                src={notebook.img}
+                                alt={notebook.title}
+                            />
+                            <div className="card-title">{notebook.title}</div>
+                            <div className="card-text">
+                                {notebook.description}
+                            </div>
+                            <button className="btn">Comprar</button>
+                        </div>
+                    ))}
                 </div>
-                <div className="card">
-                    <img
-                        className="card-img"
-                        src="https://i5.walmartimages.com/asr/fee4af78-110f-467c-86d2-6d6f27ba1afe.8422413b3b9eb231cea3f43d11a5a5c4.jpeg"
-                        alt="iPhone"
-                    />
-                    <div className="card-title">Iphone 14 Pro Max</div>
-                    <div className="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                    <button className="btn">Comprar</button>
+            );
+            break;
+
+        case "contact":
+            content = (
+                <div className="main">
+                    {auricularesData.map((auriculares, index) => (
+                        <div className="card" key={index}>
+                            <img
+                                className="card-img"
+                                src={auriculares.img}
+                                alt={auriculares.title}
+                            />
+                            <div className="card-title">
+                                {auriculares.title}
+                            </div>
+                            <div className="card-text">
+                                {auriculares.description}
+                            </div>
+                            <button className="btn">Comprar</button>
+                        </div>
+                    ))}
                 </div>
-                <div className="card">
-                    <img
-                        className="card-img"
-                        src="https://mac-center.com.pr/cdn/shop/files/iPhone_15_Pro_Max_Natural_Titanium_PDP_Image_Position-1__en-US_1445x.jpg?v=1700559459"
-                        alt="iPhone"
-                    />
-                    <div className="card-title">Iphone 15 Pro Max</div>
-                    <div className="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                    <button className="btn">Comprar</button>
+            );
+            break;
+
+        default:
+            content = (
+                <div className="main">
+                    <h1>Contenido no encontrado</h1>
                 </div>
-            </div>
-        </>
-    );
+            );
+    }
+
+    return content;
 }

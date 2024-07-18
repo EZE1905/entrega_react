@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import CartWidget from "./CartWidget";
 import { MdLaptopChromebook } from "react-icons/md";
@@ -6,7 +6,7 @@ import { LuSmartphone } from "react-icons/lu";
 import { FaHeadphones } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
 
-export default function Navbar() {
+export default function Navbar({ setContenido }) {
     return (
         <div className="navbar">
             <h1>
@@ -21,22 +21,24 @@ export default function Navbar() {
             </h1>
             <ul className="navbar-menu">
                 <li className="navbar-item">
-                    <a href="#home">
+                    <a onClick={() => setContenido("home")} href="#home">
                         <IoPeopleSharp />
                     </a>
                 </li>
                 <li className="navbar-item">
-                    <a href="#about">
+                    <a onClick={() => setContenido("about")} href="#about">
                         <MdLaptopChromebook />
                     </a>
                 </li>
                 <li className="navbar-item">
-                    <a href="#services">
+                    <a
+                        onClick={() => setContenido("services")}
+                        href="#services">
                         <LuSmartphone />
                     </a>
                 </li>
                 <li className="navbar-item">
-                    <a href="#contact">
+                    <a onClick={() => setContenido("contact")} href="#contact">
                         <FaHeadphones />
                     </a>
                 </li>

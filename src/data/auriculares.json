@@ -1,0 +1,26 @@
+[
+    {
+        "img": "https://acdn.mitiendanube.com/stores/001/593/734/products/ng-a100bt-pl-angulo1-8d30f7d17ecc9b8c8e16518679401776-1024-1024.jpg",
+        "title": "AURICULARES ARIS BLUETOOTH",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200
+    },
+    {
+        "img": "https://www.bidcom.com.ar/publicacionesML/productos/ABLUE108/1000x1000-ABLUE108.jpg",
+        "title": "Auriculares Gamer Gadnic A2000 LED",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200
+    },
+    {
+        "img": "https://www.sevenelectronics.com.ar/images/000000mls-s389ne02151s389-negro1.png",
+        "title": "AURICULAR IN EAR",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200
+    },
+    {
+        "img": "https://http2.mlstatic.com/D_NQ_NP_900109-MLA50636252333_072022-O.webp",
+        "title": "Auriculares Vincha Plegables Iqual",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200
+    }
+]

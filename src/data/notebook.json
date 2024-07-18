@@ -1,0 +1,26 @@
+[
+    {
+        "img": "https://bangho.vtexassets.com/arquivos/ids/161271/notebook-gamer-gm-15z12-rtx3050.jpg?v=638029209710300000",
+        "title": "Notebook Gamer i5 GM-15Z12 RTX 3050",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200
+    },
+    {
+        "img": "https://www.xt-pc.com.ar/img/productos/32/NOT2558.jpg",
+        "title": "NOTEBOOK ASUS 15.6 VIVOBOOK",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200
+    },
+    {
+        "img": "https://http2.mlstatic.com/D_NQ_NP_615728-MLA46579811590_072021-O.webp",
+        "title": "iNotebook Iqual Nq5x",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200
+    },
+    {
+        "img": "https://samsungar.vtexassets.com/arquivos/ids/188933-800-auto?width=800&height=auto&aspect=true",
+        "title": "Notebook Galaxy Book3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200
+    }
+]
