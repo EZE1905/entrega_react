@@ -21,6 +21,9 @@ function App() {
                     <button className="btn-accion" onClick={mostrar}>
                         Mostrar
                     </button>
+                    <div className="busqueda">
+                        <input type="text" placeholder="Buscar..." />
+                    </div>
                 </div>
                 <main>{productos ? <Main /> : null}</main>
             </div>

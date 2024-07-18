@@ -1,11 +1,16 @@
 .navbar {
     background-color: #141414;
     padding: 1rem;
+    padding-right: 3rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     border-bottom: #009e18 3px solid;
     box-shadow: #009e18 0px 0px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 50px;
 }
 
 .navbar h1 {
