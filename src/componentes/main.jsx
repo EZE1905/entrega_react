@@ -12,7 +12,7 @@ export default function Main({ contenido }) {
             content = (
                 <div className="main">
                     <div className="titulo-contenedor">
-                        <h1>Catálogo de Celulares</h1>
+                        <h2 className="about-title">Catálogo de Celulares</h2>
                     </div>
                     {celularesData.map((celular, index) => (
                         <div className="card" key={index}>
@@ -36,7 +36,7 @@ export default function Main({ contenido }) {
             content = (
                 <div className="main">
                     <div className="titulo-contenedor">
-                        <h1>Catálogo de Notebooks</h1>
+                        <h2 className="about-title">Catálogo de Notebooks</h2>
                     </div>
                     {notebookData.map((notebook, index) => (
                         <div className="card" key={index}>
@@ -60,7 +60,7 @@ export default function Main({ contenido }) {
             content = (
                 <div className="main">
                     <div className="titulo-contenedor">
-                        <h1>Catálogo de Auriculares</h1>
+                        <h2 className="about-title">Catálogo de Auriculares</h2>
                     </div>
                     {auricularesData.map((auriculares, index) => (
                         <div className="card" key={index}>
@@ -86,7 +86,7 @@ export default function Main({ contenido }) {
             content = (
                 <div className="main">
                     <div className="about">
-                        <h2>Sobre Nosotros</h2>
+                        <h2 className="about-title">Sobre Nosotros</h2>
                         <p>
                             Bienvenido a Tecno Shop, tu tienda de tecnología de
                             confianza. Ofrecemos una amplia gama de productos

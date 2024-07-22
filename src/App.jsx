@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Navbar from "./componentes/navbar.jsx";
 import Main from "./componentes/main.jsx";
+import Footer from "./componentes/Footer.jsx";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
                 <main>
                     <Main contenido={contenido} />
                 </main>
+                <Footer />
             </div>
         </>
     );
