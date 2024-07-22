@@ -1,7 +1,7 @@
 [
     {
         "img": "https://acdn.mitiendanube.com/stores/001/593/734/products/ng-a100bt-pl-angulo1-8d30f7d17ecc9b8c8e16518679401776-1024-1024.jpg",
-        "title": "AURICULARES ARIS BLUETOOTH",
+        "title": "Auriculares Aris Bluetooth",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": 1200
     },
@@ -13,13 +13,25 @@
     },
     {
         "img": "https://www.sevenelectronics.com.ar/images/000000mls-s389ne02151s389-negro1.png",
-        "title": "AURICULAR IN EAR",
+        "title": "Auriculares In Ears negros",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": 1200
     },
     {
-        "img": "https://http2.mlstatic.com/D_NQ_NP_900109-MLA50636252333_072022-O.webp",
-        "title": "Auriculares Vincha Plegables Iqual",
+        "img": "https://arsonyb2c.vtexassets.com/arquivos/ids/358085/PULSE3D_WirelessHeadset_01_Black_PR_sRGB1.jpg?v=637715395156200000",
+        "title": "Auriculares inalámbricos PULSE 3D",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200
+    },
+    {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/nr9CHMxZBsfXPMxr3tgX/imagen",
+        "title": "Auriculares Logitech G432 7.1 Wired Gaming",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200
+    },
+    {
+        "img": "https://mexx-img-2019.s3.amazonaws.com/Auricular-Gamer-Redragon-Zeus-H510-Rgb_41187_1.jpeg",
+        "title": "Auricular Gamer Redragon Zeus X H510",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": 1200
     }

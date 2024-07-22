@@ -11,6 +11,9 @@ export default function Main({ contenido }) {
         case "home":
             content = (
                 <div className="main">
+                    <div className="titulo-contenedor">
+                        <h1>Catálogo de Celulares</h1>
+                    </div>
                     {celularesData.map((celular, index) => (
                         <div className="card" key={index}>
                             <img
@@ -32,6 +35,9 @@ export default function Main({ contenido }) {
         case "about":
             content = (
                 <div className="main">
+                    <div className="titulo-contenedor">
+                        <h1>Catálogo de Notebooks</h1>
+                    </div>
                     {notebookData.map((notebook, index) => (
                         <div className="card" key={index}>
                             <img
@@ -53,6 +59,9 @@ export default function Main({ contenido }) {
         case "contact":
             content = (
                 <div className="main">
+                    <div className="titulo-contenedor">
+                        <h1>Catálogo de Auriculares</h1>
+                    </div>
                     {auricularesData.map((auriculares, index) => (
                         <div className="card" key={index}>
                             <img
@@ -76,7 +85,40 @@ export default function Main({ contenido }) {
         default:
             content = (
                 <div className="main">
-                    <h1>Contenido no encontrado</h1>
+                    <div className="about">
+                        <h2>Sobre Nosotros</h2>
+                        <p>
+                            Bienvenido a Tecno Shop, tu tienda de tecnología de
+                            confianza. Ofrecemos una amplia gama de productos
+                            tecnológicos de alta calidad para satisfacer todas
+                            tus necesidades. Nuestro equipo está dedicado a
+                            proporcionar el mejor servicio y soporte a nuestros
+                            clientes.
+                        </p>
+                        <p>
+                            Nuestra misión es brindar una experiencia de compra
+                            excepcional a nuestros clientes. Nos enorgullece
+                            brindar soluciones tecnológicas de alta calidad para
+                            satisfacer las necesidades de nuestros clientes.
+                        </p>
+                        <p>
+                            Contáctanos para obtener más información sobre
+                            nuestros productos y promociones especiales. Estamos
+                            comprometidos en brindar una experiencia de compra
+                            excepcional a nuestros clientes.
+                        </p>
+                        <p>
+                            ¡Gracias por tu tiempo y comparte nuestra
+                            experiencia!
+                        </p>
+                        <p>
+                            -Equipo de Tecno Shop
+                            <br />
+                            -Teléfono: (351) 675-1800
+                            <br />
+                            -Email: eze_thomi@hotmail.com
+                        </p>
+                    </div>
                 </div>
             );
     }

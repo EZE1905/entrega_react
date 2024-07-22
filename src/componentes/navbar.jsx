@@ -22,7 +22,7 @@ export default function Navbar({ setContenido }) {
             <ul className="navbar-menu">
                 <li className="navbar-item">
                     <a onClick={() => setContenido("home")} href="#home">
-                        <IoPeopleSharp />
+                        <LuSmartphone />
                     </a>
                 </li>
                 <li className="navbar-item">
@@ -31,15 +31,15 @@ export default function Navbar({ setContenido }) {
                     </a>
                 </li>
                 <li className="navbar-item">
-                    <a
-                        onClick={() => setContenido("services")}
-                        href="#services">
-                        <LuSmartphone />
+                    <a onClick={() => setContenido("contact")} href="#contact">
+                        <FaHeadphones />
                     </a>
                 </li>
                 <li className="navbar-item">
-                    <a onClick={() => setContenido("contact")} href="#contact">
-                        <FaHeadphones />
+                    <a
+                        onClick={() => setContenido("services")}
+                        href="#services">
+                        <IoPeopleSharp />
                     </a>
                 </li>
                 <li className="navbar-item">

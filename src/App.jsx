@@ -11,11 +11,6 @@ function App() {
         <>
             <div className="App">
                 <Navbar setContenido={setContenido} />
-                <div className="contenedor-btn">
-                    <div className="busqueda">
-                        <input type="text" placeholder="Buscar..." />
-                    </div>
-                </div>
                 <main>
                     <Main contenido={contenido} />
                 </main>
