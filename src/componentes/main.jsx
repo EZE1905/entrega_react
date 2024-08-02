@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import "./main.css";
 import productos from "../data/productos.json";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 export default function Main() {
     const [products, setproducts] = useState([]);
@@ -45,7 +45,9 @@ export default function Main() {
                     />
                     <div className="card-title">{products.title}</div>
                     <div className="card-text">{products.description}</div>
-                    <button className="btn">Comprar</button>
+                    <Link to={`/Detail/${products.id}`}>
+                        <button className="btn">Ver Más</button>
+                    </Link>
                 </div>
             ))}
         </div>
