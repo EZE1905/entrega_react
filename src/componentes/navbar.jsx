@@ -1,46 +1,48 @@
-import React, { useState } from "react";
 import "./navbar.css";
 import CartWidget from "./CartWidget";
 import { MdLaptopChromebook } from "react-icons/md";
 import { LuSmartphone } from "react-icons/lu";
 import { FaHeadphones } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
-export default function Navbar({ setContenido }) {
+export default function Navbar() {
     return (
         <div className="navbar">
-            <h1>
-                Tecno Shop{" "}
-                <span>
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/552/552489.png"
-                        alt=""
-                        className="logo"
-                    />
-                </span>
-            </h1>
+            <div className="contenedor-titulo">
+                <h1>
+                    <NavLink to="/Inicio" className="titulo-principal">
+                        Tecno Shop{" "}
+                    </NavLink>
+                    <span>
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/552/552489.png"
+                            alt=""
+                            className="logo"
+                        />
+                    </span>
+                </h1>
+            </div>
             <ul className="navbar-menu">
                 <li className="navbar-item">
-                    <a onClick={() => setContenido("home")} href="#home">
+                    <NavLink to="/categoria/celulares">
                         <LuSmartphone />
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="navbar-item">
-                    <a onClick={() => setContenido("about")} href="#about">
+                    <NavLink to="/categoria/notebook">
                         <MdLaptopChromebook />
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="navbar-item">
-                    <a onClick={() => setContenido("contact")} href="#contact">
+                    <NavLink to="/categoria/auriculares">
                         <FaHeadphones />
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="navbar-item">
-                    <a
-                        onClick={() => setContenido("services")}
-                        href="#services">
+                    <NavLink to="/nosotros">
                         <IoPeopleSharp />
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="navbar-item">
                     <CartWidget />

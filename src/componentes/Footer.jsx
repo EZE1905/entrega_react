@@ -1,6 +1,7 @@
 import React from "react";
 import "../componentes/Footer.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -28,18 +29,21 @@ export default function Footer() {
                     <h2>Links Rápidos</h2>
                     <br />
                     <ul>
-                        <a href="#">
+                        <NavLink to="/Inicio">
+                            <li>Inicio</li>
+                        </NavLink>
+                        <NavLink to="/categoria/celulares">
                             <li>Celulares</li>
-                        </a>
-                        <a href="#">
+                        </NavLink>
+                        <NavLink to="/categoria/notebook">
                             <li>Notebook</li>
-                        </a>
-                        <a href="#">
+                        </NavLink>
+                        <NavLink to="/categoria/auriculares">
                             <li>Auriculares</li>
-                        </a>
-                        <a href="#">
+                        </NavLink>
+                        <NavLink to="/Nosotros">
                             <li>Sobre Nosotros</li>
-                        </a>
+                        </NavLink>
                     </ul>
                 </div>
 

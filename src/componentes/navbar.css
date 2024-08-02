@@ -13,10 +13,23 @@
     height: 50px;
 }
 
-.navbar h1 {
+.contenedor-titulo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.titulo-principal {
     color: white;
     margin: 0;
     font-size: 2rem;
+    font-weight: bold;
+}
+
+.titulo-principal:hover {
+    color: #009e18;
+    cursor: pointer;
 }
 
 .navbar-menu {
@@ -42,6 +55,10 @@
     border-top: #009e18 3px solid;
     color: #009e18;
     font-size: 22px;
+}
+
+.navbar-item a.active {
+    color: #009e18;
 }
 
 .logo {

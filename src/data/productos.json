@@ -1,0 +1,146 @@
+[
+    {
+        "img": "https://acdn.mitiendanube.com/stores/001/593/734/products/ng-a100bt-pl-angulo1-8d30f7d17ecc9b8c8e16518679401776-1024-1024.jpg",
+        "title": "Auriculares Aris Bluetooth",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Auriculares",
+        "id": 1
+    },
+    {
+        "img": "https://www.bidcom.com.ar/publicacionesML/productos/ABLUE108/1000x1000-ABLUE108.jpg",
+        "title": "Auriculares Gamer Gadnic A2000 LED",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Auriculares",
+        "id": 2
+    },
+    {
+        "img": "https://www.sevenelectronics.com.ar/images/000000mls-s389ne02151s389-negro1.png",
+        "title": "Auriculares In Ears negros",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Auriculares",
+        "id": 3
+    },
+    {
+        "img": "https://arsonyb2c.vtexassets.com/arquivos/ids/358085/PULSE3D_WirelessHeadset_01_Black_PR_sRGB1.jpg?v=637715395156200000",
+        "title": "Auriculares inalámbricos PULSE 3D",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Auriculares",
+        "id": 4
+    },
+    {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/nr9CHMxZBsfXPMxr3tgX/imagen",
+        "title": "Auriculares Logitech G432 7.1 Wired Gaming",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Auriculares",
+        "id": 5
+    },
+    {
+        "img": "https://mexx-img-2019.s3.amazonaws.com/Auricular-Gamer-Redragon-Zeus-H510-Rgb_41187_1.jpeg",
+        "title": "Auricular Gamer Redragon Zeus X H510",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Auriculares",
+        "id": 6
+    },
+    {
+        "img": "https://clevercel.mx/cdn/shop/files/iPhone-11_Green_Front_1200x.jpg?v=1715883343",
+        "title": "iPhone 11",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Celulares",
+        "id": 7
+    },
+    {
+        "img": "https://m.media-amazon.com/images/I/61i8Vjb17SL.jpg",
+        "title": "iPhone 13 Pro Max",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Celulares",
+        "id": 8
+    },
+    {
+        "img": "https://i5.walmartimages.com/asr/fee4af78-110f-467c-86d2-6d6f27ba1afe.8422413b3b9eb231cea3f43d11a5a5c4.jpeg",
+        "title": "iPhone 14 Pro Max",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Celulares",
+        "id": 9
+    },
+    {
+        "img": "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2023/12/iPhone15_Plus_Pink_PDP_Image_Position-1__MXLA.jpg",
+        "title": "iPhone 15 Plus",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Celulares",
+        "id": 10
+    },
+    {
+        "img": "https://mac-center.com.pr/cdn/shop/files/iPhone_15_Pro_Max_Natural_Titanium_PDP_Image_Position-1__en-US_1445x.jpg?v=1700559459",
+        "title": "iPhone 15 Pro Max",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Celulares",
+        "id": 11
+    },
+    {
+        "img": "https://www.oscarbarbieri.com/pub/media/catalog/product/cache/7baadf0dec41407c7702efdbff940ecb/s/a/samsung_s23_ultra.jpg",
+        "title": "Samsung Galaxy S23 Ultra",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Celulares",
+        "id": 12
+    },
+    {
+        "img": "https://bangho.vtexassets.com/arquivos/ids/161271/notebook-gamer-gm-15z12-rtx3050.jpg?v=638029209710300000",
+        "title": "Notebook Gamer i5 RTX 3050",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Notebook",
+        "id": 13
+    },
+    {
+        "img": "https://www.xt-pc.com.ar/img/productos/32/NOT2558.jpg",
+        "title": "Notebook Asus 15.6 Vivobook",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Notebook",
+        "id": 14
+    },
+    {
+        "img": "https://www.novogar.com.ar/public/images/productos/producto_5351_20363.jpg",
+        "title": "Notebook Positivo BGH 14",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Notebook",
+        "id": 15
+    },
+    {
+        "img": "https://mexx-img-2019.s3.amazonaws.com/tumb_Notebook-Hp-250-G9-Core-i5-1235U-8Gb-Ssd-512Gb-15_47496_1.jpeg",
+        "title": "Notebook Hp 250 G9 Core i5",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Notebook",
+        "id": 16
+    },
+    {
+        "img": "https://www.comeros.com.ar/wp-content/uploads/2023/02/CX-15.6-2.png",
+        "title": "NOTEBOOK CX 15.6 INTEL I7",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Notebook",
+        "id": 17
+    },
+    {
+        "img": "https://s3-sa-east-1.amazonaws.com/saasargentina/0vAemq06uqVkavRabfEk/imagen",
+        "title": "Notebook Lenovo Intel I5",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 1200,
+        "categoria": "Notebook",
+        "id": 18
+    }
+]
