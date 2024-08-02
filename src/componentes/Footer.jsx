@@ -32,13 +32,13 @@ export default function Footer() {
                         <NavLink to="/Inicio">
                             <li>Inicio</li>
                         </NavLink>
-                        <NavLink to="/categoria/celulares">
+                        <NavLink to="/categoria/Celulares">
                             <li>Celulares</li>
                         </NavLink>
-                        <NavLink to="/categoria/notebook">
+                        <NavLink to="/categoria/Notebook">
                             <li>Notebook</li>
                         </NavLink>
-                        <NavLink to="/categoria/auriculares">
+                        <NavLink to="/categoria/Auriculares">
                             <li>Auriculares</li>
                         </NavLink>
                         <NavLink to="/Nosotros">

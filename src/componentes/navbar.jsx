@@ -25,17 +25,17 @@ export default function Navbar() {
             </div>
             <ul className="navbar-menu">
                 <li className="navbar-item">
-                    <NavLink to="/categoria/celulares">
+                    <NavLink to="/categoria/Celulares">
                         <LuSmartphone />
                     </NavLink>
                 </li>
                 <li className="navbar-item">
-                    <NavLink to="/categoria/notebook">
+                    <NavLink to="/categoria/Notebook">
                         <MdLaptopChromebook />
                     </NavLink>
                 </li>
                 <li className="navbar-item">
-                    <NavLink to="/categoria/auriculares">
+                    <NavLink to="/categoria/Auriculares">
                         <FaHeadphones />
                     </NavLink>
                 </li>
