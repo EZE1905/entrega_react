@@ -2,3 +2,95 @@
     width: 100vw;
     height: 100vh;
 }
+
+.contenedor-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    width: 70%;
+    height: 500px;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    box-shadow: #009e18 0px 0px 10px;
+}
+
+.contenedor-derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.detail-title {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: #009e18 2px solid;
+    padding-bottom: 1rem;
+}
+
+.price-description {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.btn-volver {
+    background-color: #ff0000;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: #ff0000 0px 0px 10px;
+    transition: background-color 0.2s;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.btn-volver:hover {
+    background-color: #cc0000;
+    color: white;
+}
+
+.btn-comprar {
+    background-color: #009e18;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: #009e18 0px 0px 10px;
+    transition: background-color 0.2s;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.btn-comprar:hover {
+    background-color: #007f17;
+    color: white;
+}
+
+.contenedor-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.detail-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: #009e18 1px solid;
+    box-shadow: #009e18 0px 0px 10px;
+}

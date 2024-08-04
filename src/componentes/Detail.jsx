@@ -26,11 +26,20 @@ export default function Detail() {
 
     return (
         <div className="contenedor-detail">
-            <h1>{product.name}</h1>
-            <img src={product.img} alt={product.name} />
-            <p>{product.description}</p>
-            <p className="price">${product.price}</p>
-            <Link to="/">Volver</Link>
+            <img src={product.img} alt={product.title} className="detail-img" />
+            <div className="contenedor-derecha">
+                <h1 className="detail-title">{product.title}</h1>
+                <p className="price-description">{product.description}</p>
+                <p className="price-description">Precio: ${product.price}</p>
+                <div className="contenedor-btn">
+                    <Link to="/" className="btn-comprar">
+                        Comprar
+                    </Link>
+                    <Link to="/" className="btn-volver">
+                        Volver
+                    </Link>
+                </div>
+            </div>
         </div>
     );
 }
