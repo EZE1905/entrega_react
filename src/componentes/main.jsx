@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import "./main.css";
 import productos from "../data/productos.json";
 import { useParams, Link } from "react-router-dom";
+import bannerImage from "../assets/banner.png";
 
 export default function Main() {
     const [products, setproducts] = useState([]);
@@ -29,6 +30,7 @@ export default function Main() {
 
     return (
         <div className="main">
+            <img src={bannerImage} alt="" className="banner" />
             <div className="titulo-contenedor">
                 {categoriaid ? (
                     <h2 className="about-title">Catálogo de {categoriaid}</h2>
