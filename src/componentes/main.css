@@ -97,3 +97,7 @@
     margin-bottom: 3rem;
     filter: drop-shadow(0 0 0.5rem #009e18);
 }
+
+.contenedor {
+    display: block;
+}

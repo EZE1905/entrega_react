@@ -30,12 +30,14 @@ export default function Main() {
 
     return (
         <div className="main">
-            <img src={bannerImage} alt="" className="banner" />
             <div className="titulo-contenedor">
                 {categoriaid ? (
                     <h2 className="about-title">Catálogo de {categoriaid}</h2>
                 ) : (
-                    <h2 className="about-title">Catálogo Completo</h2>
+                    <div className="contenedor">
+                        <img src={bannerImage} alt="" className="banner" />
+                        <h2 className="about-title">Catálogo Completo</h2>
+                    </div>
                 )}
             </div>
             {products.map((products, index) => (
