@@ -44,8 +44,10 @@ export default function Navbar() {
                         <IoPeopleSharp />
                     </NavLink>
                 </li>
-                <li className="navbar-item">
-                    <CartWidget />
+                <li>
+                    <NavLink to="/carrito">
+                        <CartWidget />
+                    </NavLink>
                 </li>
             </ul>
         </div>

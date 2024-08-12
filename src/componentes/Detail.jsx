@@ -1,11 +1,23 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useContext } from "react";
 import "../App.css";
 import productos from "../data/productos.json";
 import { useParams, Link } from "react-router-dom";
+import { CartContext } from "../context/CartContext";
 export default function Detail() {
     const [product, setproduct] = useState([]);
 
     const { id } = useParams();
+
+    const { Cart, setCart } = useContext(CartContext);
+
+    const addToCart = () => {
+        const newItem = {
+            img: product.img,
+            title: product.title,
+            price: product.price,
+        };
+        setCart([...Cart, newItem]);
+    };
 
     useEffect(() => {
         const myPromise = new Promise((resolve, reject) => {
@@ -18,6 +30,7 @@ export default function Detail() {
             const item = response.find((product) => product.id === Number(id));
             setproduct(item);
         });
+        myPromise.catch((error) => console.log(error));
     }, [id]);
 
     if (!product) {
@@ -32,9 +45,9 @@ export default function Detail() {
                 <p className="price-description">{product.description}</p>
                 <p className="price-description">Precio: ${product.price}</p>
                 <div className="contenedor-btn">
-                    <Link to="/" className="btn-comprar">
+                    <button onClick={addToCart} className="btn-comprar">
                         Comprar
-                    </Link>
+                    </button>
                     <Link to="/" className="btn-volver">
                         Volver
                     </Link>
