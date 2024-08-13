@@ -6,6 +6,7 @@ import bannerImage from "../assets/banner.png";
 
 export default function Main() {
     const [products, setproducts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const { categoriaid } = useParams();
 
@@ -13,7 +14,8 @@ export default function Main() {
         const myPromise = new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve(productos);
-            }, 1000);
+                setLoading(false);
+            }, 2000);
         });
 
         myPromise.then((response) => {
@@ -27,6 +29,14 @@ export default function Main() {
             }
         });
     }, [categoriaid]);
+
+    if (loading) {
+        return (
+            <div className="loading">
+                <h1 className="loading-text">Cargando Productos...</h1>
+            </div>
+        );
+    }
 
     return (
         <div className="main">

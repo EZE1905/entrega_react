@@ -101,3 +101,20 @@
 .contenedor {
     display: block;
 }
+
+/** Loading **/
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.loading h1 {
+    font-size: 3rem;
+    color: #009e18;
+    filter: drop-shadow(0 0 0.5rem #009e18);
+    animation: blink 1s infinite;
+    font-weight: 600;
+}
