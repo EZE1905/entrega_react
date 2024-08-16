@@ -1,12 +1,24 @@
 import { React, useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
+import "./Carrito.css";
 
 export default function Carrito() {
     const { Cart, setCart } = useContext(CartContext);
 
     if (Cart.length === 0) {
-        return <p>No hay productos en el carrito</p>;
+        return (
+            <>
+                <div className="contenedor-vacio">
+                    <p className="carrito-vacio">
+                        ¡Empezá un carrito de compras!
+                    </p>
+                    <Link className="volver" to="/">
+                        Volver
+                    </Link>
+                </div>
+            </>
+        );
     }
 
     const vaciarCart = () => {
@@ -14,24 +26,34 @@ export default function Carrito() {
     };
 
     return (
-        <div>
-            <h1>Carrito</h1>
+        <div className="contenedor-carrito">
+            <div className="contenedor-izquierda-carrito">
+                <ul>
+                    {Cart.map((item, index) => (
+                        <li key={index} className="item">
+                            <img src={item.img} alt="" className="img" />
+                            <h2 className="title">{item.title}</h2>
+                            <p className="price">${item.price}</p>
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
-            <ul>
-                {Cart.map((item, index) => (
-                    <li key={index}>
-                        {item.title} / ${item.price}
-                    </li>
-                ))}
-            </ul>
+            <div className="contenedor-derecha-carrito">
+                <p className="total">
+                    Total: ${Cart.reduce((acc, item) => acc + item.price, 0)}
+                </p>
 
-            <p>Total: ${Cart.reduce((acc, item) => acc + item.price, 0)}</p>
+                <button className="comprar">Comprar</button>
 
-            <button>Comprar</button>
+                <button className="vaciar" onClick={() => vaciarCart()}>
+                    Vaciar
+                </button>
 
-            <button onClick={() => vaciarCart()}>Vaciar</button>
-
-            <Link to="/">Volver</Link>
+                <Link className="volver" to="/">
+                    Volver
+                </Link>
+            </div>
         </div>
     );
 }

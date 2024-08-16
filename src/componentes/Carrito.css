@@ -1,0 +1,154 @@
+.contenedor-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+/** Contenedor Izquierda **/
+
+.contenedor-izquierda-carrito {
+    background-color: #111;
+    padding: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    margin-left: 8rem;
+    border-radius: 10px;
+    border: solid #009e18 1px;
+    box-shadow: #009e18 0px 0px 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+    margin: 2rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: solid #009e18 1px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+    border-radius: 50px;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+/** Contenedor Derecha **/
+
+.contenedor-derecha-carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #111;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    margin-right: 8rem;
+    margin-left: 5rem;
+    border-radius: 10px;
+    border: solid #009e18 1px;
+    box-shadow: #009e18 0px 0px 10px;
+}
+
+.total {
+    font-size: 2rem;
+    margin: 2rem;
+    font-weight: bold;
+}
+
+/** Botones **/
+
+.comprar,
+.vaciar,
+.volver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.comprar {
+    background-color: transparent;
+    border: solid #009e18 2px;
+}
+
+.comprar:hover {
+    border: none;
+    background-color: #009e18;
+    box-shadow: #009e18 0px 0px 10px;
+}
+
+.vaciar {
+    background-color: transparent;
+    border: solid #ff0000 2px;
+}
+
+.vaciar:hover {
+    border: none;
+    background-color: #cc0000;
+    box-shadow: #cc0000 0px 0px 10px;
+}
+
+.volver {
+    background-color: transparent;
+    border: solid #ff0000 2px;
+}
+
+.volver:hover {
+    border: none;
+    background-color: #cc0000;
+    box-shadow: #cc0000 0px 0px 10px;
+    color: #fff;
+}
+
+/*! Carrito vacío !*/
+
+.contenedor-vacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.carrito-vacio {
+    font-size: 3rem;
+    color: #cc0000;
+    filter: drop-shadow(0 0 0.5rem #cc0000);
+    animation: blink 1s infinite;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.contenedor-vacio .volver {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
