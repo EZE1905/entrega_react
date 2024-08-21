@@ -1,7 +1,14 @@
 import { React, useState, useEffect } from "react";
 import "./main.css";
-import productos from "../data/productos.json";
 import { useParams, Link } from "react-router-dom";
+import {
+    getFirestore,
+    getDocs,
+    collection,
+    where,
+    query,
+} from "firebase/firestore";
+import "./main.css";
 import bannerImage from "../assets/banner.png";
 
 export default function Main() {
@@ -11,23 +18,23 @@ export default function Main() {
     const { categoriaid } = useParams();
 
     useEffect(() => {
-        const myPromise = new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(productos);
-                setLoading(false);
-            }, 2000);
-        });
+        const db = getFirestore();
+        const itemsCollection = !categoriaid
+            ? collection(db, "items")
+            : query(
+                  collection(db, "items"),
+                  where("categoria", "==", categoriaid)
+              );
 
-        myPromise.then((response) => {
-            if (!categoriaid) {
-                setproducts(response);
-            } else {
-                const filteredProducts = response.filter(
-                    (product) => product.categoria === categoriaid
+        getDocs(itemsCollection)
+            .then((snapshot) => {
+                setproducts(
+                    snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
                 );
-                setproducts(filteredProducts);
-            }
-        });
+            })
+            .finally(() => {
+                setLoading(false);
+            });
     }, [categoriaid]);
 
     if (loading) {

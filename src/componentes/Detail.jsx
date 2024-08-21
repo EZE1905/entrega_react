@@ -1,8 +1,8 @@
 import { React, useState, useEffect, useContext } from "react";
 import "../App.css";
-import productos from "../data/productos.json";
 import { useParams, Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
+import { getFirestore, getDoc, doc } from "firebase/firestore";
 export default function Detail() {
     const [product, setproduct] = useState([]);
 
@@ -20,17 +20,14 @@ export default function Detail() {
     };
 
     useEffect(() => {
-        const myPromise = new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(productos);
-            }, 1000);
-        });
+        const db = getFirestore();
+        const refdoc = doc(db, "items", id);
 
-        myPromise.then((response) => {
-            const item = response.find((product) => product.id === Number(id));
-            setproduct(item);
+        getDoc(refdoc).then((snapshot) => {
+            if (snapshot.exists()) {
+                setproduct({ id: snapshot.id, ...snapshot.data() });
+            }
         });
-        myPromise.catch((error) => console.log(error));
     }, [id]);
 
     if (!product) {
