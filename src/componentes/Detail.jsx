@@ -40,7 +40,7 @@ export default function Detail() {
             <div className="contenedor-derecha">
                 <h1 className="detail-title">{product.title}</h1>
                 <p className="price-description">{product.description}</p>
-                <p className="price-description">Precio: ${product.price}</p>
+                <p className="price-description">USD$ {product.price}</p>
                 <div className="contenedor-btn">
                     <button onClick={addToCart} className="btn-comprar">
                         Comprar

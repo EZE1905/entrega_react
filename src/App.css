@@ -48,8 +48,7 @@
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    box-shadow: #ff0000 0px 0px 10px;
-    transition: background-color 0.2s;
+    transition: all 0.6s ease;
     margin-left: 2rem;
     margin-top: 1rem;
 }
@@ -57,6 +56,7 @@
 .btn-volver:hover {
     background-color: #cc0000;
     color: white;
+    box-shadow: #ff0000 0px 0px 10px;
 }
 
 .btn-comprar {
@@ -66,15 +66,16 @@
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    box-shadow: #009e18 0px 0px 10px;
-    transition: background-color 0.2s;
+    transition: all 0.6s ease;
     margin-left: 2rem;
     margin-top: 1rem;
 }
 
 .btn-comprar:hover {
+    border: #007f17 1px solid;
     background-color: #007f17;
     color: white;
+    box-shadow: #009e18 0px 0px 10px;
 }
 
 .contenedor-btn {

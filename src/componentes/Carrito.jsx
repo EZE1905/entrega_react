@@ -33,7 +33,7 @@ export default function Carrito() {
                         <li key={index} className="item">
                             <img src={item.img} alt="" className="img" />
                             <h2 className="title">{item.title}</h2>
-                            <p className="price">${item.price}</p>
+                            <p className="price">USD${item.price}</p>
                         </li>
                     ))}
                 </ul>
@@ -41,10 +41,12 @@ export default function Carrito() {
 
             <div className="contenedor-derecha-carrito">
                 <p className="total">
-                    Total: ${Cart.reduce((acc, item) => acc + item.price, 0)}
+                    Total: USD${Cart.reduce((acc, item) => acc + item.price, 0)}
                 </p>
 
-                <button className="comprar">Comprar</button>
+                <Link to="/Checkout" className="comprar">
+                    Finalizar compra
+                </Link>
 
                 <button className="vaciar" onClick={() => vaciarCart()}>
                     Vaciar

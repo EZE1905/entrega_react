@@ -42,7 +42,7 @@
 }
 
 .price {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-left: 2rem;
     font-weight: bold;
 }
@@ -90,18 +90,21 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.5s;
+    transition: all 0.6s ease;
 }
 
 .comprar {
     background-color: transparent;
     border: solid #009e18 2px;
+    width: 200px;
 }
 
 .comprar:hover {
     border: none;
     background-color: #009e18;
     box-shadow: #009e18 0px 0px 10px;
+    color: #fff;
+    border: solid #009e18 2px;
 }
 
 .vaciar {
