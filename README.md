@@ -24,76 +24,53 @@ Sigue estos pasos para configurar el proyecto en tu entorno local:
 
    ```bash
    git clone https://github.com/tu-usuario/tu-repositorio.git
-Navega al directorio del proyecto:
 
-bash
-Copiar código
-cd tu-repositorio
-Instala las dependencias:
-
-bash
-Copiar código
-npm install
-O, si estás usando yarn:
-
-bash
-Copiar código
-yarn install
-Configura Firebase:
-
-Crea un archivo .env en la raíz del proyecto y agrega tus credenciales de Firebase:
-
-env
-Copiar código
+2. Navega al directorio del proyecto:
+   cd tu-repositorio
+3. Instala las dependencias:
+   npm install
+4. Configura Firebase:
 VITE_FIREBASE_API_KEY=tu-api-key
 VITE_FIREBASE_AUTH_DOMAIN=tu-auth-domain
 VITE_FIREBASE_PROJECT_ID=tu-project-id
 VITE_FIREBASE_STORAGE_BUCKET=tu-storage-bucket
 VITE_FIREBASE_MESSAGING_SENDER_ID=tu-messaging-sender-id
 VITE_FIREBASE_APP_ID=tu-app-id
-Inicia el servidor de desarrollo:
 
-bash
-Copiar código
-npm run dev
-O, si estás usando yarn:
+5. Inicia el servidor de desarrollo:
+   npm run dev
 
-bash
-Copiar código
-yarn dev
-Abre tu navegador y visita http://localhost:3000 para ver la aplicación en acción.
 
 Scripts
+
 npm run dev: Inicia el servidor de desarrollo.
 npm run build: Crea una versión optimizada para producción.
 npm run preview: Previsualiza la versión de producción localmente.
+
 Estructura del Proyecto
+
 /src: Contiene el código fuente del proyecto.
-/componentes: Componentes React de la aplicación.
-/context: Contextos React para gestión de estado global.
-/firebaseConfig.js: Configuración de Firebase.
-/styles: Archivos de estilo CSS.
-/views: Vistas principales de la aplicación.
+     /componentes: Componentes React de la aplicación.
+     /context: Contextos React para gestión de estado global.
+     /firebaseConfig.js: Configuración de Firebase.
+     /styles: Archivos de estilo CSS.
+     /views: Vistas principales de la aplicación.
 /public: Archivos estáticos, como imágenes.
 index.html: Archivo HTML principal.
 vite.config.js: Configuración de Vite.
+
 Contribuciones
+
 Si deseas contribuir al proyecto, por favor sigue estos pasos:
 
-Fork el repositorio.
-Crea una rama nueva para tus cambios (git checkout -b mi-nueva-funcionalidad).
-Haz tus cambios y haz commit (git commit -am 'Añadir nueva funcionalidad').
-Push a la rama (git push origin mi-nueva-funcionalidad).
-Crea un Pull Request.
+1. Fork el repositorio.
+2. Crea una rama nueva para tus cambios (git checkout -b mi-nueva-funcionalidad).
+3. Haz tus cambios y haz commit (git commit -am 'Añadir nueva funcionalidad').
+4. Push a la rama (git push origin mi-nueva-funcionalidad).
+5. Crea un Pull Request.
+
 Licencia
+
 Este proyecto está licenciado bajo la Licencia MIT.
 
-¡Gracias por tu interés en este proyecto! Si tienes alguna pregunta o sugerencia, no dudes en abrir un issue o contactarme.
-
-markdown
-Copiar código
-
-### Notas:
-- Asegúrate de reemplazar los valores en el archivo `.env` con tus credenciales de Firebase.
-- Personaliza el nombre del repositorio, los pasos y los detalles de acuerdo con tu configuración y necesidades específicas.
-- Incluye detalles relevantes adicionales según la estructura y funcionalidades de tu proyecto.
+¡Gracias por tu interés en este proyecto! Si tienes alguna pregunta o sugerencia, no dudes en contactarme.
